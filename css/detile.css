@@ -1,0 +1,333 @@
+body {
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    font-style: normal;
+}
+
+.collapse{
+    max-width: 800px; /* Lebar maksimal kontainer video */
+    margin: 20px auto; /* Mengatur margin otomatis untuk center */
+    text-align: center; /* Menengahkan teks di dalam kontainer */
+
+}
+
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.fixed-position {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.navigation-section {
+    background-color: rgb(0, 0, 0); /* Latar belakang navbar */
+    max-width: 800px; /* Lebar maksimal kontainer video */
+    margin: 20px auto; /* Mengatur margin otomatis untuk center */
+    text-align: center; /* Menengahkan teks di dalam kontainer */
+    border-radius: 8px; /* Menambahkan sudut melingkar pada navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan */
+}
+
+.navigation-section a {
+    color: #ffffff;
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+.navigation-section .navbar {
+    padding: 15px 20px; /* Padding di dalam navbar */
+}
+
+.navigation-section .navbar-brand img {
+    margin-left: 15px;
+    height: 36px;
+}
+
+.navigation-section .container {
+    display: flex; /* Menggunakan Flexbox untuk item nav */
+    justify-content: space-around; /* Membuat jarak yang merata antara item */
+    padding: 10px 0; /* Menambahkan padding atas dan bawah yang lebih sedikit */
+}
+
+.navigation-section .navbar-nav {
+    display: flex; /* Menggunakan Flexbox untuk item nav */
+    list-style: none; /* Menghilangkan bullet points */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.navigation-section .navbar-nav .nav-item {
+    margin: 0 15px; /* Margin horizontal untuk item nav */
+}
+
+.navigation-section .navbar-nav .nav-item a {
+    color: hwb(0 100% 0%) !important; /* Warna teks link */
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 15px; /* Menambahkan padding untuk link agar lebih mudah diklik */
+    border-radius: 5px; /* Menambahkan sudut melingkar pada link */
+    transition: background-color 0.3s, color 0.3s; /* Efek transisi untuk background dan warna saat hover */
+}
+
+.navigation-section .navbar-nav .nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang saat hover */
+    color: #ffffff; /* Warna saat hover */
+}
+
+.btn-register {
+    height: 36px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    background-color: #08103f;
+}
+
+.btn-register:hover {
+    opacity: 60%;
+}
+
+.navbar-toggler img {
+    width: 30px;
+    height: auto;
+}
+
+.img-car {
+    width: 49.46vw;
+}
+.video-container {
+    max-width: 800px; /* Lebar maksimal kontainer video */
+    margin: 20px auto; /* Mengatur margin otomatis untuk center */
+    text-align: center; /* Menengahkan teks di dalam kontainer */
+}
+
+iframe {
+    width: 100%; /* Lebar 100% dari kontainer */
+    height: 450px; /* Tinggi iframe */
+    border: none; /* Menghilangkan border */
+} 
+.sinopsis{
+    color: aliceblue;    
+    max-width: 800px; /* Lebar maksimal kontainer video */
+    margin: 20px auto; /* Mengatur margin otomatis untuk center */ 
+}
+.why-us-section{
+    color: aliceblue;    
+    max-width: 800px; /* Lebar maksimal kontainer video */
+    margin: 20px auto; /* Mengatur margin otomatis untuk center */ 
+} 
+.row{
+    max-width: 800px; /* Lebar maksimal kontainer video */ 
+    display: flex;
+    text-align: center;
+}
+.card {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #08103f;
+    border-radius: 8px;
+    padding: 24px;
+    background-color: #9fbbc9;
+}
+
+.icon-why-us {
+    width: 200px;
+    height: 200px;
+
+}
+.why-us-section .card h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 0;
+}
+
+.why-us-section .card p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.why-us-section img{
+    width: 150px;
+    height: 150px;
+    margin:10px;
+    border-radius: 15px;
+}
+ 
+ 
+    /* Kontainer pemain diatur untuk geser horizontal tanpa scrollbar */
+    .player-container {
+        display: flex;
+        overflow: hidden; /* Matikan scrollbar horizontal */
+        padding: 10px 0;
+        scroll-behavior: smooth;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .player-card {
+        flex: 0 0 25%; /* Setiap kartu menggunakan 25% lebar dari kontainer */
+        margin-right: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+    /* Efek hover pada konten pemain */
+    .card-content {
+        background-color: rgba(255, 255, 255, 0.489);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        padding:2px;
+        overflow-y: hidden;
+    }
+
+    .card-content:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Gaya gambar pemain */
+    .player-image {
+        border-radius: 8px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Tombol geser */
+    .btn-slide {
+        background-color: #000000;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 50px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    .btn-slide:hover {
+        background-color: #ffffff98;
+    }
+
+    /* Efek responsif */
+    @media (max-width: 768px) {
+        .btn-slide {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+        .player-card {
+            flex: 0 0 45%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .player-card {
+            flex: 0 0 100%;
+        }
+    } 
+
+
+
+#crew{
+    color: aliceblue;    
+    max-width: 800px; /* Lebar maksimal kontainer video */
+    margin: 20px auto; /* Mengatur margin otomatis untuk center */     
+}
+
+.comments-section {
+    
+    max-width: 800px; /* Lebar maksimal kontainer video */
+    margin: 20px auto; /* Mengatur margin otomatis untuk center */ 
+    background-color: #1c1c1c; /* Latar belakang bagian komentar */
+    color: #ffffff; /* Warna teks */
+    padding: 20px; /* Padding di dalam bagian komentar */ 
+    border-radius: 5px; /* Sudut melengkung */
+}
+
+.comments-section h2 {
+    margin-bottom: 15px; /* Jarak bawah judul */
+}
+
+.comment-container {
+    margin-bottom: 20px; /* Jarak bawah container komentar */
+}
+
+.comment {
+    border-bottom: 1px solid #444; /* Garis pemisah antar komentar */
+    padding: 10px 0; /* Padding untuk setiap komentar */
+}
+
+.comment-author {
+    font-weight: bold; /* Membuat nama penulis komentar menjadi tebal */
+}
+
+.comment-text {
+    margin: 5px 0; /* Jarak antara nama dan teks komentar */
+}
+
+.comment-form {
+
+    margin-top: 20px; /* Jarak atas untuk form komentar */
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 90%; /* Lebar 100% dari container */
+    padding: 10px; /* Padding di dalam input dan textarea */
+    margin-bottom: 10px; /* Jarak bawah input dan textarea */
+    border: 1px solid #ccc; /* Border untuk input dan textarea */
+    border-radius: 3px; /* Sudut melengkung */
+    background-color: #333; /* Latar belakang input dan textarea */
+    color: #ffffff; /* Warna teks input dan textarea */
+}
+
+.comment-form button {
+    background-color: #08103f; /* Warna tombol */
+    color: #ffffff; /* Warna teks tombol */
+    padding: 10px 15px; /* Padding tombol */
+    border: none; /* Tanpa border */
+    border-radius: 3px; /* Sudut melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.comment-form button:hover {
+    background-color: #0a1e5b; /* Warna saat hover pada tombol */
+}
+
+.pict {
+    padding: 20px 0;
+    color: aliceblue;    
+    max-width: 800px; /* Lebar maksimal kontainer video */
+    margin: 20px auto; /* Mengatur margin otomatis untuk center */ 
+}
+
+.pict .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Kolom dengan lebar fleksibel */
+    gap: 20px; /* Memberikan jarak antar gambar */
+}
+
+.pict img {
+    width: 180px;
+    height: 250px; /* Menetapkan tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional dan sesuai ukuran */
+    display: block;
+    border-radius: 8px; /* Menambahkan radius pada sudut gambar */
+    transition: transform 0.3s ease; /* Menambahkan efek transisi saat hover */
+}
+
+.pict img:hover {
+    transform: scale(1.05); /* Membesarkan gambar sedikit saat hover */
+}
