@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 26, 2025 at 05:14 AM
+-- Generation Time: Mar 06, 2025 at 05:03 AM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,8 +40,7 @@ CREATE TABLE `gallery_album` (
 --
 
 INSERT INTO `gallery_album` (`AlbumID`, `NamaAlbum`, `Deskripsi`, `TanggalDibuat`, `UserID`) VALUES
-(1, 'Album Gunung', 'foto gunung', '2025-01-01', 1),
-(2, 'Album Pantai', 'Foto-foto Pantai ', '2025-02-14', 2),
+(2, 'Album Pantai', 'Foto-foto Pantai', '2025-02-14', 2),
 (3, 'Album Langit', 'Foto Langit', '2025-03-10', 3),
 (5, 'Album Laut', 'Foto Laut', '2025-03-10', 4);
 
@@ -67,7 +66,7 @@ CREATE TABLE `gallery_foto` (
 INSERT INTO `gallery_foto` (`FotoID`, `JudulFoto`, `DeskripsiFoto`, `TanggalUnggah`, `LokasiFile`, `AlbumID`) VALUES
 (8, 'gunung', '\"Gunung mengajarkan bahwa tak ada batasan untuk bermimpi setinggi mungkin. Biru langit siang memberi ketenangan, dan gemerlap bintang malam memberi harapan.\"', '2025-02-03', 'assets/post/gunung 2.jpg', 3),
 (11, 'Langit gelap', '\"Langit gelap bukanlah tanda bahwa dunia telah kehilangan cahaya, tetapi hanya menunggu bintang-bintang untuk bersinar.\"', '2025-02-10', 'assets/post/gunung5.jpg', 3),
-(27, 'Gunung', 'Gunung adalah tempat yang tepat untuk mencari petualangan dan pengalaman baru.', '2025-02-19', 'assets/post/gunung1.jpeg', 1);
+(51, 'Laut Bunaken', '-', '2025-03-06', 'assets/post/bunaken-4.jpg', 5);
 
 -- --------------------------------------------------------
 
@@ -125,14 +124,16 @@ CREATE TABLE `gallery_user` (
 --
 
 INSERT INTO `gallery_user` (`UserID`, `Username`, `Password`, `Email`, `NamaLengkap`, `Alamat`, `Role`) VALUES
-(1, 'Sani', 'password123', 'sani@example.com', 'Sani Dwi', 'Jl. Contoh No. 123, Jakarta', 'user'),
 (2, 'Tini', 'password456', 'tini@example.com', 'Tini Maharani', 'Jl. Contoh No. 456, Jakarta', 'user'),
 (3, 'Sintya', 'password789', 'sin11@example.com', 'Sintya Prasiska', 'Jl. Alam Raya No. 789, Jakarta', 'user'),
 (4, 'Khasanah', 'password33', 'khasanah2@example.com', 'Khasanah Dewi', 'Jl.Nanas No. 02. semarang', 'user'),
 (5, 'selvi', '12345678', 'selvi2@gmail.com', 'selviii', 'mambe', 'user'),
-(8, 'admin', '123', 'admin@gmail.com', 'administrasi', 'sentono', 'user'),
+(8, 'admin', '1234', 'admin@gmail.com', 'administrasi', 'sentono', 'admin'),
 (9, 'sasa', '$2y$10$2dMWxj5hi9xsc/75mwnHAuRMPMRWAPpM6zNxLDAzeM7ub3DMOxHqG', 'sisi@gmail.com', 'sdas', 'pws', 'user'),
-(10, 'nurul', '$2y$10$4./uGjKs0FESAtbbed9pL.8GOeJi5.JL5C48EZUBWBxK2fYNID/Qm', 'nurul@gmail.com', 'nurull', 'karangjati', 'user');
+(10, 'nurul', '$2y$10$4./uGjKs0FESAtbbed9pL.8GOeJi5.JL5C48EZUBWBxK2fYNID/Qm', 'nurul@gmail.com', 'nurull', 'karangjati', 'user'),
+(11, 'ratih', '$2y$10$c8yIbI4ye8a6roOjWJ0OVOIe.EgTnN8iZaX1MFxZxHqPrK1CzcXbW', 'ratihkumala3012@gmail.com', 'Ratih Kumala', 'Kuripan', 'user'),
+(23, 'ratihh', '$2y$10$3Z/I0p3wQuSCtScncAOJouqynTjyO1vU/N.puuzKvvCHKIhhvJon.', 'ratihhkumala3012@gmail.com', 'Ratih Kumala', 'Kuripan', 'user'),
+(24, 'nurulfirdaus', '$2y$10$P5iW7t3i6fxMua2y3FoAHOqaA2HpWUKmvuajFfVbif7J7KeE6qNf2', 'ratihkumala30112@gmail.com', 'Ratih Kumala', 'Kuripan', 'user');
 
 --
 -- Indexes for dumped tables
@@ -184,13 +185,13 @@ ALTER TABLE `gallery_user`
 -- AUTO_INCREMENT for table `gallery_album`
 --
 ALTER TABLE `gallery_album`
-  MODIFY `AlbumID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `AlbumID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `gallery_foto`
 --
 ALTER TABLE `gallery_foto`
-  MODIFY `FotoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `FotoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `gallery_komentarfoto`
@@ -208,7 +209,7 @@ ALTER TABLE `gallery_likefoto`
 -- AUTO_INCREMENT for table `gallery_user`
 --
 ALTER TABLE `gallery_user`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Constraints for dumped tables
